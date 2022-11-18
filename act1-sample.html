@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en" ng-app> <!--- - Whole Page -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <title>AngularJS - Activity 1</title>
+</head>
+<body>
+    <!--<div ng-app></div> - Certain Parts Only -->
+    <!-- <div>
+    <h2>Please Enter your name</h2>
+    <input type="text" ng-model="nameControl">
+    <h3>Hi {{nameControl}}!</h3>
+    
+    <h3 ng-bind="nameControl">Hi</h3>
+    <p ng-bind="nameControl"></p>  
+</div> -->
+
+<div> <!-- With Filter -->
+<h2>Please Enter your name</h2>
+    <input type="text" ng-model="nameControl">
+    <h3>Hi {{nameControl|lowercase}}!</h3>
+    </div>
+</body>
+</html>

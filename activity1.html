@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>PDC20 - Module06 - Activity01</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            PDC20 | Module06 | Activity01
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">AngularJS</h5>
+          <p class="card-text">
+
+            <h2>Please Enter your First Name</h2>
+            <input type="text" ng-model="firstName">
+            <h3>Your First Name is: {{firstName}}</h3>
+
+            <h2>Please Enter your Middle Name</h2>
+            <input type="text" ng-model="middleName">
+            <h3>Your Middle Name Is: {{middleName}}</h3>
+
+
+            <h2>Please Enter your Last Name</h2>
+            <input type="text" ng-model="lastName">
+            <h3>Your Last Name Is : {{lastName}}</h3>
+
+            <hr>
+            <h3>Your Full Name Is: {{firstName + " " + middleName + " " + lastName|uppercase}}</h3>
+            <hr>
+          </p>
+
+          <h5 class="card-title">Simple Currency Calculator</h5>
+          <br>
+          <label>Please Enter Your First Value:</label>
+          <input type="number" ng-model="val1">
+          <br><br>
+          <label>Please Enter Your Second Value:</label>
+          <input type="number" ng-model="val2">
+          <hr>
+          <p>Your Total is: {{val1 + val2 | currency:"₱"}}</p>
+          <hr>
+          
+        </div>
+      </div>
+</body>
+</html>
